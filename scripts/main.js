@@ -14,6 +14,10 @@ function main() {
         "Check function findStringCheck": window.findStringCheck,
         "Check funtion numberCheck": window.numberCheck,
         "Check function numberToString": window.numberToString,
+        "Check function numberExpo": window.numberExponential,
+        "Check function numberToFix": window.numberToFix,
+        "Check function numberToPrecision": window.numberToPrecision,
+        "Check function numberValueOf": window.numberValueOf,
         
     }
 

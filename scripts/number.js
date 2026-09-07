@@ -10,10 +10,54 @@ function numberCheck() {
 function numberToString() {
     let x = 123
     let y = 500
+    let text = x.toString(2);
 
-    document.getElementById('numberToString').innerHTML = x + y + " is a number. <br>";
-    document.getElementById('numberToString').innerHTML += x.toString() + ' ' + x + " now is string. <br>";
-    document.getElementById('numberToString').innerHTML += y.toString() + ' ' + y + " now is string. <br>";
+    document.getElementById('numberToString').innerHTML = 'x = ' + x + '<br>';
+    document.getElementById('numberToString').innerHTML += 'y = ' + y + '<br>';
+    document.getElementById('numberToString').innerHTML += x + y + " is a number. <br>";
+    document.getElementById('numberToString').innerHTML += x.toString() + " x now is string. <br>";
+    document.getElementById('numberToString').innerHTML += y.toString() + " y now is string. <br>";
+    document.getElementById('numberToString').innerHTML += text + " now x which is 123 converted into 0/1 system. <br>";
+
+    return true
+}
+
+function numberExponential() {
+    let x = 200;
+    let y = 5000;
+
+    document.getElementById('numberExpo').innerHTML = x.toExponential(2) + " now x have exponent in 2. <br>" + y.toExponential(6) + " now y have exponent in 6. <br>" + "The parameter is optional. If you don't specify it, JavaScript will not round the number. <br>" ;
+
+    return true
+}
+
+function numberToFix() {
+    let x = 1.241;
+
+    document.getElementById('numberToFix').innerHTML = 'x = ' + x + '<br>';
+    document.getElementById('numberToFix').innerHTML += x.toFixed(2) + " Round the number. Now parameter 2. <br>";
+    document.getElementById('numberToFix').innerHTML += x.toFixed(3) + " Round the number. Now parameter 3. <br>";
+    document.getElementById('numberToFix').innerHTML += x.toFixed(4) + " Round the number. Now parameter 4. <br>";
+
+    return true
+}
+
+function numberToPrecision() {
+    let x = 2.1252;
+    
+    document.getElementById('numberToPrecision').innerHTML = 'x = ' + x + '<br>';
+    document.getElementById('numberToPrecision').innerHTML += x.toPrecision(2) + " Round the number after . Now parameter 2. <br>";
+    document.getElementById('numberToPrecision').innerHTML += x.toPrecision(3) + " Round the number after . Now parameter 3. <br>";
+    document.getElementById('numberToPrecision').innerHTML += x.toPrecision(4) + " Round the number after . Now parameter 4. <br>";
+
+    return true
+}
+
+function numberValueOf() {
+    let x = 2.124124;
+
+    document.getElementById('numberValuesOf').innerHTML = 'x = ' + x + '<br>';
+    document.getElementById('numberValuesOf').innerHTML += x.valueOf() + " Shows the number as the number. <br>";
 
     return true
 }
