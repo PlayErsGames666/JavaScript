@@ -18,7 +18,10 @@ function main() {
         "Check function numberToFix": window.numberToFix,
         "Check function numberToPrecision": window.numberToPrecision,
         "Check function numberValueOf": window.numberValueOf,
-        
+        "Check function numberMethod": window.numberMethod,
+        "Check function numberParseInt": window.numberParseInt,
+        "Check function numberParseFloat": window.numberParseFloat,
+        "Check function numberIs": window.numberIs,
     }
 
     let allOk = true;
@@ -32,7 +35,34 @@ function main() {
         }
 
         try {
-            const result = func({ type: 'init' });
+            let result = func({ type: 'init' }); //поменял с const на let чтобы изменять ебаную переменную
+
+            if (typeof result === 'object' && result !== null ) { // Проверяю на то что этот тип объект и не должен быть нулём как ты
+                let subTestsPassed = true; // Создал ещё одну переменную на проверку прогона
+
+                console.groupCollapsed(`Поддетали для: ${testName}`);
+
+                for (const subName in result) { // Создал цикл с условием что теперь result будет subName(даже здесь небинарные есть)
+                    const subFunc = result[subName]; // Ещё одна хуйня которая не должна меняться потому что это сами подфункции
+
+                    if (typeof subFunc === 'function') { // Создал условие на проверку что это блять фунция 
+                        const subResult = subFunc(); // Наградил её переменной для проверку резултата запуска подфункций
+
+                        if (subResult) {
+                            console.log(`[SUCCESS]: ${testName} -> ${subName}`);
+                        }
+                        else {
+                            console.error(`[ERROR]: ${testName} -> ${subName}`);
+                        }
+
+                        if (!subResult) { // Обратная хуйня ! для сокращения писанины
+                            subTestsPassed = false;
+                        }
+                    }
+                }
+                
+                result = subTestsPassed; // Проверём то как прошёл тест
+            }
 
             if (result) {
                 console.log(`[SUCCESS]: ${testName}`);

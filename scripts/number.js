@@ -61,3 +61,73 @@ function numberValueOf() {
 
     return true
 }
+
+function numberMethod() {
+    let a = 410;
+    let boolt = true;
+    let boolf = false;
+    let float = 10.05;
+    let name = 'Jon';
+
+    document.getElementById('numberMeth').innerHTML = a + " = " + Number(a) + "<br>" + boolt + " = " + Number(boolt) + "<br>" + boolf + " = " + Number(boolf) + "<br>" + float + " = " + Number(float) + "<br>" + name + ' = ' + Number(name);
+
+    return true
+}
+
+function numberParseInt() {
+    let a = 410;
+    let boolt = true;
+    let boolf = false;
+    let float = 10.05;
+    let name = 'Jon';
+
+    document.getElementById('numberParseInt').innerHTML = a + " = " + parseInt(a) + "<br>" + boolt + " = " + parseInt(boolt) + "<br>" + boolf + " = " + parseInt(boolf) + "<br>" + float + " = " + parseInt(float) + "<br>" + name + ' = ' + parseInt(name);
+
+    return true
+}
+
+function numberParseFloat() {
+    let a = 410;
+    let boolt = true;
+    let boolf = false;
+    let float = 10.05;
+    let name = 'Jon';
+
+    document.getElementById('numberParseFloat').innerHTML = a + " = " + parseFloat(a) + "<br>" + boolt + " = " + parseFloat(boolt) + "<br>" + boolf + " = " + parseFloat(boolf) + "<br>" + float + " = " + parseFloat(float) + "<br>" + name + ' = ' + parseFloat(name);
+
+    return true
+}
+
+function numberIs() {
+    return {
+        integer: function() {
+                let number = 101;
+                let infnumber = 1241215125242;
+
+                document.getElementById('numberIsInteger').innerHTML = Number.isInteger(number) + " = Number: " + number + "<br>" + Number.isInteger(infnumber) + " = " + infnumber + "<br>";
+
+                return true
+            },
+        finite: function() {
+                let number = 101;
+
+                document.getElementById('numberIsFinite').innerHTML = Number.isFinite(number) + " = Number: " + number + "<br>";
+
+                return true        
+            },
+        nan: function() {
+                let number = 101;
+
+                document.getElementById('numberIsNaN').innerHTML = Number.isNaN(number) + " = Number: " + number + "<br>";
+
+                return true
+            },
+        safeInteger: function safeInteger() {
+                let number = 101;
+
+                document.getElementById('numberIsSafeInteger').innerHTML = Number.isSafeInteger(number) + " = Number: " + number + "<br>";
+
+                return true
+            }     
+    }
+}
