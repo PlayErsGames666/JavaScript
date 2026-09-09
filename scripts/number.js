@@ -131,3 +131,69 @@ function numberIs() {
             }     
     }
 }
+
+function numberEpsilon() {
+    let x = Number.EPSILON;
+
+    document.getElementById('numberEpsilon').innerHTML = "Number EPSILON = " + x;
+
+    return true
+}
+
+function numberMaxValue() {
+    let x = Number.MAX_VALUE;
+
+    document.getElementById('numberMaxValue').innerHTML = "Number Max Value = " + x;
+
+    return true
+}
+
+function numberMinValue() {
+    let x = Number.MIN_VALUE;
+
+    document.getElementById('numberMinValue').innerHTML = "Number Min Value = " + x;
+
+    return true
+}
+
+function numberMinSafeInteger() {
+    let x = Number.MIN_SAFE_INTEGER;
+
+    document.getElementById('numberMinSafeInteger').innerHTML = "Number Min Safe Integer = " + x;
+
+    return true
+}
+
+function numberMaxSafeInteger() {
+    let x = Number.MAX_SAFE_INTEGER;
+
+    document.getElementById('numberMaxSafeInteger').innerHTML = "Number Max Safe Integer = " + x;
+
+    return true
+}
+
+function numberPositiveInfinity() {
+    let x = Number.POSITIVE_INFINITY
+
+    document.getElementById('numberPositiveInfinity').innerHTML = "Number Positive Infinity = " + x;
+
+    return true
+}
+
+function numberNegativenfinity() {
+    let x = Number.NEGATIVE_INFINITY
+
+    document.getElementById('numberNegativeInfinity').innerHTML = "Number Negative Infinity = " + x;
+
+    return true
+}
+
+function numberNaN() {
+    let x = 101;
+    let text = 'Jon';
+    let result = x / text;
+
+    document.getElementById('numberNaN').innerHTML = "Not a Number = " + "101 / 'Jon' = " + result;
+
+    return true
+}

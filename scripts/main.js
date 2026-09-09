@@ -22,6 +22,14 @@ function main() {
         "Check function numberParseInt": window.numberParseInt,
         "Check function numberParseFloat": window.numberParseFloat,
         "Check function numberIs": window.numberIs,
+        "Check function numberEpsilon": window.numberEpsilon,
+        "Check function numberMaxValue": window.numberMaxValue,
+        "Check function numberMinValue": window.numberMinValue,
+        "Check function numberMinSafeInteger": window.numberMinSafeInteger,
+        "Check function numberMaxSafeInteger": window.numberMaxSafeInteger,
+        "Check function numberPositiveInfinity": window.numberPositiveInfinity,
+        "Check function numberNegativeInfinity": window.numberNegativenfinity,
+        "Check function numberNaN": window.numberNaN,
     }
 
     let allOk = true;
@@ -61,6 +69,8 @@ function main() {
                     }
                 }
                 
+                console.groupEnd();
+
                 result = subTestsPassed; // Проверём то как прошёл тест
             }
 
