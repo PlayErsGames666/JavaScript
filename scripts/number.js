@@ -197,3 +197,12 @@ function numberNaN() {
 
     return true
 }
+
+function numberBigInt() {
+    let x = 1249712701578912591695210n;
+    let y = BigInt('1294125728701249020471');
+
+    document.getElementById('numberBigInt').innerHTML = x + " = If it ends with n, this number world be more then JavaScript is represented in MAX_SAFE_VALUE <br>" + y + " = Also in JavaScript could write it with Bigint() data type in string cases.";
+
+    return true
+}

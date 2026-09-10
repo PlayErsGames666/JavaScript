@@ -30,6 +30,8 @@ function main() {
         "Check function numberPositiveInfinity": window.numberPositiveInfinity,
         "Check function numberNegativeInfinity": window.numberNegativenfinity,
         "Check function numberNaN": window.numberNaN,
+        "Check function numberBigInt": window.numberBigInt,
+        
     }
 
     let allOk = true;
