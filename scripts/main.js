@@ -31,7 +31,11 @@ function main() {
         "Check function numberNegativeInfinity": window.numberNegativenfinity,
         "Check function numberNaN": window.numberNaN,
         "Check function numberBigInt": window.numberBigInt,
-        
+        "Check function sumALL": window.sumALL,
+        "Check function multiplyAll": window.multiplyAll,
+        "Check function getPositiveStats": window.getPositiveStats,
+        "Check function getEvenStats": window.getEvenStats,
+        "Check function getStats": window.getStats,
     }
 
     let allOk = true;
