@@ -36,6 +36,10 @@ function main() {
         "Check function getPositiveStats": window.getPositiveStats,
         "Check function getEvenStats": window.getEvenStats,
         "Check function getStats": window.getStats,
+        "Check function conditionDateHours": window.conditionDateHours,
+        "Check function conditionTernary": window.conditionTernary,
+        "Check function conditionTernarySub": window.conditionTernarySub,
+        "Check function conditionSwitch": window.conditionSwitch,
     }
 
     let allOk = true;
