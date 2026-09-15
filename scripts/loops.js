@@ -111,3 +111,18 @@ function continueCheck() {
     
     return true; 
 }
+
+function whileLoop() {
+    let text = "";
+    let count = 10;
+    let i = 0;
+
+    while (i < count) {
+        text += "Suck <br> my <br> dick!<br>";
+        i++;
+    }
+
+    document.getElementById("whileLoop").innerHTML = text;
+
+    return true
+}

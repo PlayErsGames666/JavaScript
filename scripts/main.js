@@ -40,6 +40,7 @@ function main() {
         "Check function conditionTernary": window.conditionTernary,
         "Check function conditionTernarySub": window.conditionTernarySub,
         "Check function conditionSwitch": window.conditionSwitch,
+        "Check function whileLoop": window.whileLoop,
     }
 
     let allOk = true;
