@@ -41,6 +41,7 @@ function main() {
         "Check function conditionTernarySub": window.conditionTernarySub,
         "Check function conditionSwitch": window.conditionSwitch,
         "Check function whileLoop": window.whileLoop,
+        "Check function showTime": window.showTime,
     }
 
     let allOk = true;
