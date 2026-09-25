@@ -42,6 +42,7 @@ function main() {
         "Check function conditionSwitch": window.conditionSwitch,
         "Check function whileLoop": window.whileLoop,
         "Check function showTime": window.showTime,
+        "Check function objectMethod": window.objectMethod,
     }
 
     let allOk = true;
