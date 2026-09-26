@@ -43,6 +43,12 @@ function main() {
         "Check function whileLoop": window.whileLoop,
         "Check function showTime": window.showTime,
         "Check function objectMethod": window.objectMethod,
+        "Check function objectWindow": window.objectWindow,
+        "Check function objectDisplay": window.objectDisplay,
+        "Check function objectLoop": window.objectLoop,
+        "Check function objectValues": window.objectValues,
+        "Check function objectEntries": window.objectEntries,
+        "Check function objectJSON": window.objectJSON,
     }
 
     let allOk = true;
