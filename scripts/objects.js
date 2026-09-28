@@ -99,3 +99,19 @@ function objectJSON() {
 
     return true;
 }
+
+function objectPerson(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.fullName = function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+const friend = new objectPerson("Elnur", "Suinov", 21, "White");
+const father = new objectPerson("Abay", "Pirnazarov", 55, "Black")
+
+document.getElementById('personProperties').innerHTML = "My friend " + friend.fullName() + ".<br>" + "His age is " + friend.age + ".<br>" + "Eye colour is " + friend.eyeColor + ".<br><br>";
+document.getElementById('personProperties').innerHTML += "My father " + father.fullName() + ".<br>" + "His age is " + father.age + ".<br>" + "Eye colour is " + father.eyeColor + ".<br>";
