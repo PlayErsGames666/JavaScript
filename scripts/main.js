@@ -49,6 +49,8 @@ function main() {
         "Check function objectValues": window.objectValues,
         "Check function objectEntries": window.objectEntries,
         "Check function objectJSON": window.objectJSON,
+        "Check function scopeInit": window.scopeInit,
+        "Check function scopeStrictMode": window.scopeStrictMode,
     }
 
     let allOk = true;
