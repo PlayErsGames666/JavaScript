@@ -51,6 +51,10 @@ function main() {
         "Check function objectJSON": window.objectJSON,
         "Check function scopeInit": window.scopeInit,
         "Check function scopeStrictMode": window.scopeStrictMode,
+        "Check function date": window.date,
+        "Check function dateToString": window.dateToString,
+        "Check function dateToUtcString": window.dateToUtcSctring,
+        "Check function dateToISOString": window.dateToISOSctring,
     }
 
     let allOk = true;
