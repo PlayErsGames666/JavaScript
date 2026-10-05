@@ -55,6 +55,12 @@ function main() {
         "Check function dateToString": window.dateToString,
         "Check function dateToUtcString": window.dateToUtcSctring,
         "Check function dateToISOString": window.dateToISOSctring,
+        "Check function dateISO": window.dateISO,
+        "Check function dateParse": window.dateParse,
+        "Check function dateFullYear": window.dateFullYear,
+        "Check function dateGetMonth": window.dateGetMonth,
+        "Check function dateGetMonthEech": window.dateGetMonthEach,
+        "Check function dateGetDate": window.dateGetDate,
     }
 
     let allOk = true;
