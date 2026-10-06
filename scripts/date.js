@@ -81,4 +81,71 @@ function dateGetDate() {
     return true;
 }
 
+function dateGetHour() {
+    const hour = new Date();
 
+    document.getElementById('dateGetHour').innerHTML = hour.getHours();
+    
+    return true;
+}
+
+function dateGetMinutes() {
+    const minutes = new Date();
+
+    document.getElementById('dateGetMinute').innerHTML = minutes.getMinutes();
+    
+    return true;
+}
+
+function dateGetSeconds() {
+    const seconds = new Date();
+
+    document.getElementById('dateGetSecond').innerHTML = seconds.getSeconds();
+    
+    return true;
+}
+
+function dateGetMilliseconds() {
+    const milliseconds = new Date();
+
+    document.getElementById('dateGetMillisecond').innerHTML = milliseconds.getMilliseconds();
+    
+    return true;
+}
+
+function dateGetDay() {
+    const day = new Date();
+
+    document.getElementById('dateGetDay').innerHTML = day.getDay();
+    
+    return true;
+}
+
+function dateGetDayWeek() {
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const d = new Date();
+
+    let day = daysOfWeek[d.getDay()];
+
+    document.getElementById('dateGetDayWeek').innerHTML = day;
+    
+    return true;
+}
+
+function dateGetTime() {
+    const time = new Date();
+
+    document.getElementById('dateGetTime').innerHTML = time.getTime();
+    
+    return true;
+}
+
+function dateGetTimezone() {
+    const timezone = new Date();
+
+    document.getElementById('dateGetTimezoneOffset').innerHTML = timezone.getTimezoneOffset();
+    
+    return true;
+}
+
+// Also the same thinks in set methodologies.

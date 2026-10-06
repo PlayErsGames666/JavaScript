@@ -61,6 +61,14 @@ function main() {
         "Check function dateGetMonth": window.dateGetMonth,
         "Check function dateGetMonthEech": window.dateGetMonthEach,
         "Check function dateGetDate": window.dateGetDate,
+        "Check function dateGetHour": window.dateGetHour,
+        "Check function dateGetMinute": window.dateGetMinutes,
+        "Check function dateGetSeconds": window.dateGetSeconds,
+        "Check function dateGetMilliseconds": window.dateGetMilliseconds,
+        "Check function dateGetDay": window.dateGetDay,
+        "Check function dateGetDayOfWeek": window.dateGetDayWeek,
+        "Check function dateGetTime": window.dateGetTime,
+        "Check function dateGetTimezoneOffset": window.dateGetTimezone,
     }
 
     let allOk = true;
