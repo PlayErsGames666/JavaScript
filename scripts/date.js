@@ -148,4 +148,4 @@ function dateGetTimezone() {
     return true;
 }
 
-// Also the same thinks in set methodologies.
+// Also the same things in set methodologies.
