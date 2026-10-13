@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Galaxy Scroll Navigation</title>
+  <link rel="stylesheet" href="static/galaxy.css">
+  <script src="scripts/galaxy.js" defer></script>
+</head>
+<body>
+  <!-- Верхнее меню -->
+  <nav>
+    <div class="logo">GALAXY</div>
+    <div class="nav-links">
+      <button class="btn" onclick="scrollToSection(0)">Main</button>
+      <button class="btn" onclick="scrollToSection(1)">About</button>
+      <button class="btn" onclick="scrollToSection(2)">Projects</button>
+      <button class="btn" onclick="scrollToSection(3)">Contact</button>
+    </div>
+  </nav>
+
+  <!-- Секции страницы для скролла -->
+  <div class="scroll-container">
+    <section class="section">
+      <div class="content-card">
+        <h1>01. Main</h1>
+        <p>Листайте страницу вниз или используйте верхнее меню. Камера плавно погружается в глубины галактики по мере скролла.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-card">
+        <h1>02. About</h1>
+        <p>Галактика перестроена на 8 пышных рукавов и увеличенный уровень хаотичности (randomness: 0.7), что создает объёмное туманное облако.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-card">
+        <h1>03. Projects</h1>
+        <p>Благодаря Three.js и скролл-привязке, сцену можно адаптировать под любые задачи: от показа портфолио до презентации продуктов.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-card">
+        <h1>04. Contact</h1>
+        <p>Вы достигли центральной зоны! <br>Напишите нам для реализации крутых 3D-проектов.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</body>
+</html>
