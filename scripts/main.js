@@ -69,6 +69,13 @@ function main() {
         "Check function dateGetDayOfWeek": window.dateGetDayWeek,
         "Check function dateGetTime": window.dateGetTime,
         "Check function dateGetTimezoneOffset": window.dateGetTimezone,
+        "Check function arrayLength": window.arrayLength,
+        "Check function arrayAt": window.arrayAt,
+        "Check function arrayJoin": window.arrayJoin,
+        "Check function arrayPop": window.arrayPop,
+        "Check function arrayPush": window.arrayPush,
+        "Check function arrayShift": window.arrayShift,
+        "Check function arrayUnshift": window.arrayUnshift,
     }
 
     let allOk = true;
