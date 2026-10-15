@@ -76,6 +76,15 @@ function main() {
         "Check function arrayPush": window.arrayPush,
         "Check function arrayShift": window.arrayShift,
         "Check function arrayUnshift": window.arrayUnshift,
+        "Check function arrayIsArray": window.arrayIsArray,
+        "Check function arrayDelete": window.arrayDelete,
+        "Check function arrayConcat": window.arrayConcat,
+        "Check function arrayCopyWithin": window.arrayCopyWithin,
+        "Check function arrayFlat": window.arrayFlat,
+        "Check function arraySplice": window.arraySplice,
+        "Check function arrayToSpliced": window.arrayToSpliced,
+        "Check function arraySlice": window.arraySlice,
+        "Check function arrayToString": window.arrayToString,
     }
 
     let allOk = true;
